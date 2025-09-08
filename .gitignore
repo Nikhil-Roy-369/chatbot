@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.Python/
+
+# PyTorch / Large libraries
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.t7
+*.lib
+*.dll
+*.dylib
+*.so
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
