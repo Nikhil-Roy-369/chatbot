@@ -1,5 +1,7 @@
 # Python
 __pycache__/
+*.py[cod]
+*$py.class
 *.pyc
 *.pyo
 *.pyd
@@ -7,16 +9,42 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-*.log
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Virtual Environments
+# Environment files
+.env
+.venv
 venv/
 env/
 ENV/
-.venv/
 .Python/
+env.bak/
+venv.bak/
 
-# PyTorch / Large libraries
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Model files and checkpoints
+models/*/checkpoint-*/
+intent_model/
+model/checkpoint-*/
+*.safetensors
 *.pt
 *.pth
 *.ckpt
@@ -26,7 +54,14 @@ ENV/
 *.lib
 *.dll
 *.dylib
-*.so
+
+# Development and testing files
+test_*.py
+check_*.py
+*_test.py
+*_dev.py
+clean_*.py
+preprocess_*.py
 
 # IDEs / Editors
 .vscode/
@@ -46,3 +81,6 @@ Thumbs.db
 *.log
 *.tmp
 *.swp
+logs/
+temp/
+tmp/

@@ -10,6 +10,62 @@ if "token" not in st.session_state:
 if "email" not in st.session_state:  
     st.session_state.email = None
 
+# ---- Password Reset Flow ----
+params = st.query_params
+reset_token = params.get("token", None)
+
+def show_reset_form(token):
+    st.markdown("""
+    <style>
+    .reset-card {
+        background: linear-gradient(135deg, #f7f9fa 60%, #e3e9f7 100%);
+        padding: 2.5rem 2rem 2rem 2rem;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(80,120,200,0.10);
+        margin: 2.5rem auto 2.5rem auto;
+        max-width: 420px;
+        border: 1.5px solid #e0e6f7;
+    }
+    .reset-title { text-align: center; font-size: 1.7rem; font-weight: 700; color: #2a3b6e; margin-bottom: 0.5rem; }
+    .reset-desc { text-align: center; color: #4a5a7a; margin-bottom: 1.5rem; }
+    </style>
+    """, unsafe_allow_html=True)
+    st.markdown("<div class='reset-card'>", unsafe_allow_html=True)
+    st.markdown("<div class='reset-title'>🔑 Reset Your Password</div>", unsafe_allow_html=True)
+    st.markdown("<div class='reset-desc'>Please enter your new password below 👇</div>", unsafe_allow_html=True)
+    new_pw = st.text_input("🆕 New Password", type="password")
+    confirm_pw = st.text_input("✅ Confirm Password", type="password")
+    submitted = st.button("💾 Save Password")
+    if submitted:
+        if not new_pw or not confirm_pw:
+            st.warning("⚠️ Both fields are required")
+        elif new_pw != confirm_pw:
+            st.error("⚠️ Passwords do not match")
+        else:
+            with st.spinner("Resetting password..."):
+                try:
+                    res = httpx.post(
+                        f"{API_URL}/reset-password",
+                        json={"token": token, "new_password": new_pw},
+                        timeout=10.0,
+                    )
+                    if res.status_code == 200:
+                        st.success("✅ Password reset successful! You can now login.")
+                    else:
+                        try:
+                            error_msg = res.json().get("detail", "Something went wrong")
+                        except Exception:
+                            error_msg = res.text or "Something went wrong"
+                        st.error(f"❌ Error: {error_msg}")
+                except Exception as e:
+                    st.error(f"🚨 Connection error: {e}")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# If reset token is present, show reset form and skip rest of UI
+if reset_token:
+    show_reset_form(reset_token)
+    st.stop()
+
 # ---- API Helpers ----
 def api_register(username, email, password, age, location, phone, language):
     return httpx.post(f"{API_URL}/register", json={
@@ -50,17 +106,16 @@ def logout():
 st.set_page_config(page_title="Global Wellness Chatbot", page_icon="🌍", layout="centered")
 st.title("🌍 Global Wellness Chatbot")
 st.markdown("### 🧘 Stay healthy. Stay connected.")
-
 st.markdown("""
 <style>
 .stButton button {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: white !important;
-  border-radius: 8px; padding: 0.6rem 1.2rem; border: none;
-  font-weight: bold; width: 100%; margin-bottom: 1rem;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white !important;
+    border-radius: 8px; padding: 0.6rem 1.2rem; border: none;
+    font-weight: bold; width: 100%; margin-bottom: 1rem;
 }
 .profile-card { background: white; padding: 2rem; border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-align: center; width: 60%; margin: auto; }
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-align: center; width: 60%; margin: auto; }
 .avatar { width: 100px; height: 100px; border-radius: 50%; margin-bottom: 1rem; border: 3px solid #2575fc; }
 </style>
 """, unsafe_allow_html=True)
@@ -133,86 +188,151 @@ if not st.session_state.token:
             else:
                 st.error("⚠️ Please enter your email")
 
-# ---- Profile (Logged In) ----
+# ---- Main App Navigation (Logged In) ----
 else:
-    st.markdown("## 👤 User Profile")
+    st.sidebar.title("Navigation")
+    page = st.sidebar.radio("Go to:", ["Profile", "Chatbot", "Logout"])
 
-    res = api_get_profile()
-    if res.status_code != 200:
-        st.error("⚠️ Failed to load profile")
-    else:
-        profile = res.json()
-
-        st.markdown("""
-        <style>
-        .profile-card { 
-            background: none; 
-            padding: 2rem; 
-            border-radius: 15px; 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.05); 
-            text-align: center; 
-            width: 60%; 
-            margin: auto; 
-        }
-        .avatar { 
-            width: 100px; 
-            height: 100px; 
-            border-radius: 50%; 
-            margin-bottom: 1rem; 
-            border: 3px solid #2575fc; 
-            object-fit: cover;
-        }
-        .buttons-row { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
-        </style>
-        """, unsafe_allow_html=True)
-
-        st.markdown("<div class='profile-card'>", unsafe_allow_html=True)
-
-        # Display avatar (no upload)
-        avatar_url = profile.get("avatar_url") or "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-        st.markdown(f"<img class='avatar' src='{avatar_url}'>", unsafe_allow_html=True)
-
-        st.markdown(f"### {profile.get('username') or ''} 👋")
-        st.markdown(f"📧 **Email:** {profile.get('email') or ''}")
-
-        col1, col2 = st.columns(2)
-        with col1:
-            new_username = st.text_input("✏️ Update Username", profile.get("username") or "")
-            new_location = st.text_input("📍 Update Location", profile.get("location") or "")
-            new_language = st.selectbox(
-                "🗣️ Preferred Language",
-                ["", "English", "Hindi", "Telugu", "Tamil", "Kannada", "Malayalam", "Bengali", "Marathi", "Gujarati", "Urdu"],
-                index=(["", "English", "Hindi", "Telugu", "Tamil", "Kannada", "Malayalam", "Bengali", "Marathi", "Gujarati", "Urdu"].index(profile.get("language")) if profile.get("language") else 0)
-            )
-        with col2:
-            new_age = st.number_input("🎂 Update Age", min_value=0, max_value=120, value=int(profile.get("age") or 0), step=1)
-            new_phone = st.text_input("📱 Update Phone", profile.get("phone") or "")
-
-        # Buttons in one row
-        st.markdown("<div class='buttons-row'>", unsafe_allow_html=True)
-        save_clicked = st.button("💾 Save Changes")
-        logout_clicked = st.button("🚪 Logout")
-        st.markdown("</div>", unsafe_allow_html=True)
-
-        if save_clicked:
-            updates = {}
-            if new_username != (profile.get("username") or ""): updates["username"] = new_username.strip() or None
-            if new_location != (profile.get("location") or ""): updates["location"] = new_location.strip() or None
-            if new_language != (profile.get("language") or ""): updates["language"] = new_language or None
-            if new_age != int(profile.get("age") or 0): updates["age"] = int(new_age)
-            if new_phone != (profile.get("phone") or ""): updates["phone"] = new_phone.strip() or None
-
-            if not updates:
-                st.info("No changes to save.")
-            else:
-                ures = api_update_profile(updates)
-                if ures.status_code == 200:
-                    st.success("✅ Profile updated successfully! Refreshing…")
-                    st.experimental_rerun()
+    if page == "Profile":
+        st.markdown("## 👤 User Profile")
+        res = api_get_profile()
+        if res.status_code != 200:
+            st.error("⚠️ Failed to load profile")
+        else:
+            profile = res.json()
+            st.markdown("""
+            <style>
+            .profile-card { 
+                background: none; 
+                padding: 2rem; 
+                border-radius: 15px; 
+                box-shadow: 0 6px 20px rgba(0,0,0,0.05); 
+                text-align: center; 
+                width: 60%; 
+                margin: auto; 
+            }
+            .avatar { 
+                width: 100px; 
+                height: 100px; 
+                border-radius: 50%; 
+                margin-bottom: 1rem; 
+                border: 3px solid #2575fc; 
+                object-fit: cover;
+            }
+            .buttons-row { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
+            </style>
+            """, unsafe_allow_html=True)
+            st.markdown("<div class='profile-card'>", unsafe_allow_html=True)
+            avatar_url = profile.get("avatar_url") or "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            st.markdown(f"<img class='avatar' src='{avatar_url}'>", unsafe_allow_html=True)
+            st.markdown(f"### {profile.get('username') or ''} 👋")
+            st.markdown(f"📧 **Email:** {profile.get('email') or ''}")
+            col1, col2 = st.columns(2)
+            with col1:
+                new_username = st.text_input("✏️ Update Username", profile.get("username") or "")
+                new_location = st.text_input("📍 Update Location", profile.get("location") or "")
+                new_language = st.selectbox(
+                    "🗣️ Preferred Language",
+                    ["", "English", "Hindi", "Telugu", "Tamil", "Kannada", "Malayalam", "Bengali", "Marathi", "Gujarati", "Urdu"],
+                    index=(["", "English", "Hindi", "Telugu", "Tamil", "Kannada", "Malayalam", "Bengali", "Marathi", "Gujarati", "Urdu"].index(profile.get("language")) if profile.get("language") else 0)
+                )
+            with col2:
+                new_age = st.number_input("🎂 Update Age", min_value=0, max_value=120, value=int(profile.get("age") or 0), step=1)
+                new_phone = st.text_input("📱 Update Phone", profile.get("phone") or "")
+            st.markdown("<div class='buttons-row'>", unsafe_allow_html=True)
+            save_clicked = st.button("💾 Save Changes")
+            st.markdown("</div>", unsafe_allow_html=True)
+            if save_clicked:
+                updates = {}
+                if new_username != (profile.get("username") or ""): updates["username"] = new_username.strip() or None
+                if new_location != (profile.get("location") or ""): updates["location"] = new_location.strip() or None
+                if new_language != (profile.get("language") or ""): updates["language"] = new_language or None
+                if new_age != int(profile.get("age") or 0): updates["age"] = int(new_age)
+                if new_phone != (profile.get("phone") or ""): updates["phone"] = new_phone.strip() or None
+                if not updates:
+                    st.info("No changes to save.")
                 else:
-                    st.error("⚠️ Error updating profile")
+                    ures = api_update_profile(updates)
+                    if ures.status_code == 200:
+                        st.success("✅ Profile updated successfully! Refreshing…")
+                    else:
+                        st.error("⚠️ Error updating profile")
+            st.markdown("</div>", unsafe_allow_html=True)
 
-        if logout_clicked:
-            logout()
+    elif page == "Chatbot":
+        st.header("💬 Chat with the Wellness Bot")
+        if "chat_history" not in st.session_state:
+            st.session_state.chat_history = []
+        if "last_bot_response" not in st.session_state:
+            st.session_state.last_bot_response = ""
+        if "last_user_message" not in st.session_state:
+            st.session_state.last_user_message = ""
+        if "feedback_given" not in st.session_state:
+            st.session_state.feedback_given = False
+        if "show_comment_box" not in st.session_state:
+            st.session_state.show_comment_box = False
 
-        st.markdown("</div>", unsafe_allow_html=True)
+        user_message = st.text_input("Type your health question here:", key="chat_input")
+        if st.button("Send", key="send_chat") and user_message.strip():
+            headers = {"Authorization": f"Bearer {st.session_state.token}"}
+            res = httpx.post(f"{API_URL}/chat", json={"message": user_message}, headers=headers)
+            if res.status_code == 200:
+                bot_response = res.json().get("response", "No response.")
+            else:
+                bot_response = "Error: Could not get response from backend."
+            st.session_state.chat_history.append(("You", user_message))
+            st.session_state.chat_history.append(("Bot", bot_response))
+            st.session_state.last_bot_response = bot_response
+            st.session_state.last_user_message = user_message
+            st.session_state.feedback_given = False  # Reset feedback for new response
+            st.session_state.show_comment_box = False
+
+        # Display chat history
+        for sender, message in st.session_state.chat_history:
+            if sender == "You":
+                st.markdown(f"**You:** {message}")
+            else:
+                st.markdown(f"**Bot:** {message}")
+
+        # --- Feedback Section ---
+        if st.session_state.last_bot_response and not st.session_state.feedback_given:
+            st.markdown("#### Was this response helpful?")
+            col1, col2 = st.columns([1, 1])
+            with col1:
+                if st.button("👍 Yes", key="thumbs_up"):
+                    httpx.post(
+                        f"{API_URL}/feedback",
+                        json={
+                            "user_id": st.session_state.email,
+                            "query": st.session_state.last_user_message,
+                            "response": st.session_state.last_bot_response,
+                            "rating": "up",
+                            "comment": ""
+                        }
+                    )
+                    st.success("Thank you for your feedback!")
+                    st.session_state.feedback_given = True
+            with col2:
+                if st.button("👎 No", key="thumbs_down"):
+                    st.session_state.show_comment_box = True
+
+            if st.session_state.get("show_comment_box", False):
+                comment = st.text_area("Please tell us how we can improve this response:", key="feedback_comment")
+                if st.button("Submit Feedback", key="submit_feedback"):
+                    httpx.post(
+                        f"{API_URL}/feedback",
+                        json={
+                            "user_id": st.session_state.email,
+                            "query": st.session_state.last_user_message,
+                            "response": st.session_state.last_bot_response,
+                            "rating": "down",
+                            "comment": comment
+                        }
+                    )
+                    st.success("Thank you for your feedback!")
+                    st.session_state.feedback_given = True
+                    st.session_state.show_comment_box = False
+
+    elif page == "Logout":
+        logout()
+        st.stop()

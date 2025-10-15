@@ -1,3 +1,4 @@
+
 import streamlit as st
 import httpx
 
@@ -6,6 +7,7 @@ API_URL = "http://127.0.0.1:8000"
 
 st.set_page_config(page_title="Reset Password", page_icon="🔑", layout="centered")
 st.title("🔑 Reset Your Password")
+
 
 # ✅ Fetch token from reset link
 params = st.query_params

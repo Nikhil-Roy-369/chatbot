@@ -1,0 +1,5 @@
+intent,entity,response,source,disclaimer
+medicine_advice,headache,For headaches, paracetamol (acetaminophen) is often used. Avoid overuse and consult a doctor if pain persists.,https://www.nhs.uk/conditions/headaches/,This is general advice. Always consult a healthcare professional for personalized recommendations.
+symptom_check,diabetes,Common symptoms of diabetes include frequent urination, excessive thirst, unexplained weight loss, extreme fatigue, blurred vision, and slow-healing sores.,https://www.cdc.gov/diabetes/basics/symptoms.html,This is not a diagnosis. Please consult a doctor for medical concerns.
+medicine_advice,fever,Paracetamol is usually recommended for reducing fever. If it persists, seek medical advice.,https://www.who.int/news-room/fact-sheets/detail/fever,This is general advice. Always consult a healthcare professional for personalized recommendations.
+;l.

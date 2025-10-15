@@ -12,9 +12,15 @@ import smtplib
 import sqlite3
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from fastapi import FastAPI, Request
+from db import save_feedback, save_failed_query
+from db import init_feedback_db
+init_feedback_db()
+
+app = FastAPI()
 
 # ---------- Import DB functions ----------
-from .database import get_db, init_db, row_to_dict, get_user_by_email_or_username
+from db import get_db, init_db, row_to_dict, get_user_by_email_or_username
 
 # ---------- Load .env ----------
 load_dotenv(dotenv_path=Path(__file__).parent / ".env")
@@ -90,6 +96,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
     return row_to_dict(row)
 
 def send_reset_email(to_email: str, token: str):
+    # Use /reset_password for Streamlit multi-page app, or /pages/reset_password if needed
     reset_link = f"{FRONTEND_URL}/reset_password?token={token}"
     subject = "Password Reset Request"
     body = f"""
@@ -212,6 +219,35 @@ def reset_password(payload: ResetPasswordRequest):
     hashed_pw = get_password_hash(payload.new_password)
     conn = get_db()
     conn.execute("UPDATE users SET password = ? WHERE email = ?", (hashed_pw, email))
-    conn.commit()
+    conn.commit()    
     conn.close()
     return {"message": "Password reset successful"}
+
+@app.post("/feedback")
+async def feedback_endpoint(request: Request):
+    data = await request.json()
+    save_feedback(
+        data.get("user_id"),
+        data.get("query"),
+        data.get("response"),
+        data.get("rating"),
+        data.get("comment")
+    )
+    return {"status": "success"}
+
+# ---------- Chatbot Endpoint ----------
+from fastapi import Body
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent))
+from chatbot_engine import get_chatbot_response  # Import your new logic
+class ChatRequest(BaseModel):
+    message: str
+
+@app.post("/chat")
+def chat(request: ChatRequest, current_user: dict = Depends(get_current_user)):
+    response = get_chatbot_response(request.message)
+    # If chatbot returns fallback, log as failed query
+    if response.strip().lower().startswith("sorry, i couldn't understand"):
+        save_failed_query(current_user.get("email", "guest"), request.message)
+    return {"response": response}

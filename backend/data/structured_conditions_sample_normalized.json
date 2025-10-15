@@ -1,0 +1,912 @@
+[
+  {
+    "condition": {
+      "en": "Headache Relief",
+      "hi": "सिरदर्द से राहत"
+    },
+    "description": {
+      "en": "Managing headaches with safe medication and lifestyle changes.",
+      "hi": "सुरक्षित दवाओं और जीवनशैली में बदलाव से सिरदर्द का प्रबंधन।"
+    },
+    "possible_symptom": {
+      "en": "Pain in head, sensitivity to light, mild nausea.",
+      "hi": "सिर में दर्द, रोशनी के प्रति संवेदनशीलता, हल्का मतली।"
+    },
+    "first_aid_tips": {
+      "en": "Rest in a quiet room, drink water, and use paracetamol if needed.",
+      "hi": "शांत कमरे में आराम करें, पानी पिएं, और आवश्यकता हो तो पैरासिटामोल लें।"
+    },
+    "prevention_tips": {
+      "en": "Stay hydrated, avoid triggers, and manage stress.",
+      "hi": "हाइड्रेटेड रहें, ट्रिगर से बचें, और तनाव को नियंत्रित करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Back Pain Management",
+      "hi": "पीठ दर्द का प्रबंधन"
+    },
+    "description": {
+      "en": "Approaches to relieve back pain using medication and self-care.",
+      "hi": "दवाओं और स्वयं देखभाल से पीठ दर्द को कम करने के उपाय।"
+    },
+    "possible_symptom": {
+      "en": "Aching or stiffness in the back, limited movement.",
+      "hi": "पीठ में दर्द या अकड़न, सीमित गति।"
+    },
+    "first_aid_tips": {
+      "en": "Rest, apply ice or heat, and use ibuprofen if needed.",
+      "hi": "आराम करें, बर्फ या गर्मी लगाएं, और आवश्यकता हो तो आइबुप्रोफेन लें।"
+    },
+    "prevention_tips": {
+      "en": "Maintain good posture and exercise regularly.",
+      "hi": "अच्छा पोस्चर बनाए रखें और नियमित रूप से व्यायाम करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Fever Control",
+      "hi": "बुखार नियंत्रण"
+    },
+    "description": {
+      "en": "Reducing fever safely with medication and home care.",
+      "hi": "दवाओं और घरेलू देखभाल से सुरक्षित रूप से बुखार को कम करना।"
+    },
+    "possible_symptom": {
+      "en": "High temperature, chills, sweating.",
+      "hi": "तेज बुखार, ठंड लगना, पसीना आना।"
+    },
+    "first_aid_tips": {
+      "en": "Rest, drink fluids, and use paracetamol if needed.",
+      "hi": "आराम करें, तरल पदार्थ पिएं, और आवश्यकता हो तो पैरासिटामोल लें।"
+    },
+    "prevention_tips": {
+      "en": "Practice good hygiene and avoid sick contacts.",
+      "hi": "अच्छी स्वच्छता बनाए रखें और बीमार लोगों से संपर्क से बचें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Allergy Relief",
+      "hi": "एलर्जी से राहत"
+    },
+    "description": {
+      "en": "Managing allergy symptoms with antihistamines and avoidance.",
+      "hi": "एंटीहिस्टामाइन और परहेज से एलर्जी के लक्षणों का प्रबंधन।"
+    },
+    "possible_symptom": {
+      "en": "Sneezing, runny nose, itchy eyes.",
+      "hi": "छींक आना, बहती नाक, खुजली वाली आंखें।"
+    },
+    "first_aid_tips": {
+      "en": "Use antihistamines and avoid known allergens.",
+      "hi": "एंटीहिस्टामाइन का उपयोग करें और ज्ञात एलर्जी कारकों से बचें।"
+    },
+    "prevention_tips": {
+      "en": "Keep environment clean and avoid triggers.",
+      "hi": "पर्यावरण को साफ रखें और ट्रिगर से बचें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Sore Throat Care",
+      "hi": "गले में खराश की देखभाल"
+    },
+    "description": {
+      "en": "Treating sore throat with home remedies and medication.",
+      "hi": "घरेलू उपायों और दवाओं से गले की खराश का इलाज।"
+    },
+    "possible_symptom": {
+      "en": "Pain when swallowing, scratchy throat.",
+      "hi": "निगलते समय दर्द, खराश वाला गला।"
+    },
+    "first_aid_tips": {
+      "en": "Gargle with warm salt water, drink warm fluids, use lozenges.",
+      "hi": "गर्म नमक पानी से गरारे करें, गर्म तरल पदार्थ पिएं, लोजेंज का उपयोग करें।"
+    },
+    "prevention_tips": {
+      "en": "Wash hands frequently and avoid close contact with sick people.",
+      "hi": "हाथों को बार-बार धोएं और बीमार लोगों के निकट संपर्क से बचें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Diabetes Symptoms",
+      "hi": "मधुमेह के लक्षण"
+    },
+    "description": {
+      "en": "Recognizing early signs of diabetes.",
+      "hi": "मधुमेह के प्रारंभिक लक्षणों को पहचानना।"
+    },
+    "possible_symptom": {
+      "en": "Frequent urination, excessive thirst, unexplained weight loss.",
+      "hi": "बार-बार पेशाब आना, अत्यधिक प्यास लगना, बिना कारण वजन घटना।"
+    },
+    "first_aid_tips": {
+      "en": "Monitor blood sugar and seek medical advice if symptoms appear.",
+      "hi": "ब्लड शुगर की निगरानी करें और लक्षण दिखने पर चिकित्सीय सलाह लें।"
+    },
+    "prevention_tips": {
+      "en": "Maintain a healthy diet and regular exercise.",
+      "hi": "स्वस्थ आहार और नियमित व्यायाम बनाए रखें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Flu Symptoms",
+      "hi": "फ्लू के लक्षण"
+    },
+    "description": {
+      "en": "Identifying symptoms of influenza (flu).",
+      "hi": "इन्फ्लुएंजा (फ्लू) के लक्षणों की पहचान।"
+    },
+    "possible_symptom": {
+      "en": "Fever, chills, body aches, cough.",
+      "hi": "बुखार, ठंड लगना, शरीर में दर्द, खांसी।"
+    },
+    "first_aid_tips": {
+      "en": "Rest, drink fluids, and use fever reducers if needed.",
+      "hi": "आराम करें, तरल पदार्थ पिएं, और आवश्यकता हो तो बुखार कम करने वाली दवाएं लें।"
+    },
+    "prevention_tips": {
+      "en": "Get vaccinated and practice good hygiene.",
+      "hi": "टीका लगवाएं और अच्छी स्वच्छता अपनाएं।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Asthma Warning Signs",
+      "hi": "अस्थमा के चेतावनी संकेत"
+    },
+    "description": {
+      "en": "Early symptoms of asthma and when to seek help.",
+      "hi": "अस्थमा के प्रारंभिक लक्षण और सहायता कब लेनी चाहिए।"
+    },
+    "possible_symptom": {
+      "en": "Wheezing, shortness of breath, chest tightness.",
+      "hi": "सीटी जैसी आवाज़, सांस की कमी, सीने में जकड़न।"
+    },
+    "first_aid_tips": {
+      "en": "Use prescribed inhaler and seek medical help if symptoms worsen.",
+      "hi": "निर्धारित इनहेलर का उपयोग करें और लक्षण बिगड़ने पर चिकित्सीय सहायता लें।"
+    },
+    "prevention_tips": {
+      "en": "Avoid triggers and follow asthma action plan.",
+      "hi": "ट्रिगर से बचें और अस्थमा एक्शन प्लान का पालन करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Dengue Fever Signs",
+      "hi": "डेंगू बुखार के लक्षण"
+    },
+    "description": {
+      "en": "Recognizing symptoms of dengue fever.",
+      "hi": "डेंगू बुखार के लक्षणों की पहचान।"
+    },
+    "possible_symptom": {
+      "en": "High fever, severe headache, joint pain, rash.",
+      "hi": "तेज बुखार, तेज सिरदर्द, जोड़ों में दर्द, चकत्ते।"
+    },
+    "first_aid_tips": {
+      "en": "Rest, drink fluids, and seek medical attention if severe.",
+      "hi": "आराम करें, तरल पदार्थ पिएं, और गंभीर होने पर चिकित्सीय सहायता लें।"
+    },
+    "prevention_tips": {
+      "en": "Avoid mosquito bites and eliminate standing water.",
+      "hi": "मच्छरों के काटने से बचें और रुके हुए पानी को हटाएं।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Anemia Symptoms",
+      "hi": "एनीमिया के लक्षण"
+    },
+    "description": {
+      "en": "Common signs of anemia and when to consult a doctor.",
+      "hi": "एनीमिया के सामान्य लक्षण और डॉक्टर से कब परामर्श लें।"
+    },
+    "possible_symptom": {
+      "en": "Fatigue, weakness, pale skin, dizziness.",
+      "hi": "थकान, कमजोरी, पीली त्वचा, चक्कर आना।"
+    },
+    "first_aid_tips": {
+      "en": "Eat iron-rich foods and consult a doctor for diagnosis.",
+      "hi": "आयरन युक्त खाद्य पदार्थ खाएं और निदान के लिए डॉक्टर से परामर्श लें।"
+    },
+    "prevention_tips": {
+      "en": "Maintain a balanced diet with adequate iron.",
+      "hi": "पर्याप्त आयरन के साथ संतुलित आहार बनाए रखें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Sprained Ankle",
+      "hi": "मचली हुई टखने"
+    },
+    "description": {
+      "en": "Care for a sprained ankle using the RICE method.",
+      "hi": "RICE विधि का उपयोग करके मचली हुई टखने की देखभाल करें।"
+    },
+    "possible_symptom": {
+      "en": "Swelling, pain, difficulty walking.",
+      "hi": "सूजन, दर्द, चलने में कठिनाई।"
+    },
+    "first_aid_tips": {
+      "en": "Rest, ice, compress, and elevate the ankle.",
+      "hi": "आराम करें, बर्फ लगाएं, दबाव दें और टखने को ऊपर उठाएं।"
+    },
+    "prevention_tips": {
+      "en": "Wear supportive footwear and avoid uneven surfaces.",
+      "hi": "सहायक जूते पहनें और असमान सतहों से बचें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Minor Cuts and Wounds",
+      "hi": "छोटे कट और घाव"
+    },
+    "description": {
+      "en": "First aid for small cuts and scrapes.",
+      "hi": "छोटे कट और खरोंच के लिए प्राथमिक उपचार।"
+    },
+    "possible_symptom": {
+      "en": "Bleeding, pain, redness.",
+      "hi": "खून बहना, दर्द, लालिमा।"
+    },
+    "first_aid_tips": {
+      "en": "Clean with soap and water, apply antiseptic, and cover with a bandage.",
+      "hi": "साबुन और पानी से साफ करें, एंटीसेप्टिक लगाएं, और पट्टी से ढकें।"
+    },
+    "prevention_tips": {
+      "en": "Use caution with sharp objects and keep wounds clean.",
+      "hi": "तेज वस्तुओं से सावधानी बरतें और घावों को साफ रखें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Burns (Minor)",
+      "hi": "जलन (हल्की)"
+    },
+    "description": {
+      "en": "Treating minor burns at home.",
+      "hi": "घर पर हल्की जलन का इलाज।"
+    },
+    "possible_symptom": {
+      "en": "Redness, pain, swelling.",
+      "hi": "लालिमा, दर्द, सूजन।"
+    },
+    "first_aid_tips": {
+      "en": "Cool under running water, cover with sterile dressing, avoid breaking blisters.",
+      "hi": "बहते पानी के नीचे ठंडा करें, बाँझ पट्टी से ढकें, और फफोले न फोड़ें।"
+    },
+    "prevention_tips": {
+      "en": "Be cautious with hot objects and liquids.",
+      "hi": "गर्म वस्तुओं और तरल पदार्थों से सावधान रहें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Nosebleed",
+      "hi": "नाक से खून आना"
+    },
+    "description": {
+      "en": "How to stop a nosebleed safely.",
+      "hi": "नाक से खून को सुरक्षित रूप से कैसे रोकें।"
+    },
+    "possible_symptom": {
+      "en": "Bleeding from the nose, mild dizziness.",
+      "hi": "नाक से खून बहना, हल्का चक्कर आना।"
+    },
+    "first_aid_tips": {
+      "en": "Sit upright, lean forward, pinch the nose for 10–15 minutes.",
+      "hi": "सीधा बैठें, आगे झुकें, और 10–15 मिनट तक नाक को दबाएं।"
+    },
+    "prevention_tips": {
+      "en": "Avoid nose picking and keep nasal passages moist.",
+      "hi": "नाक में उंगली डालने से बचें और नाक की नलियों को नम रखें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Blisters",
+      "hi": "फफोले"
+    },
+    "description": {
+      "en": "Caring for blisters on the feet or hands.",
+      "hi": "पैरों या हाथों पर फफोलों की देखभाल।"
+    },
+    "possible_symptom": {
+      "en": "Fluid-filled bump, tenderness.",
+      "hi": "तरल से भरा उभार, कोमलता।"
+    },
+    "first_aid_tips": {
+      "en": "Keep clean, avoid popping, cover with a sterile bandage.",
+      "hi": "साफ रखें, फफोले न फोड़ें, बाँझ पट्टी से ढकें।"
+    },
+    "prevention_tips": {
+      "en": "Wear comfortable shoes and reduce friction.",
+      "hi": "आरामदायक जूते पहनें और घर्षण को कम करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Sleep Hygiene",
+      "hi": "नींद की स्वच्छता"
+    },
+    "description": {
+      "en": "Practices for better sleep and overall health.",
+      "hi": "बेहतर नींद और समग्र स्वास्थ्य के लिए अभ्यास।"
+    },
+    "possible_symptom": {
+      "en": "Fatigue, poor concentration, irritability.",
+      "hi": "थकान, एकाग्रता की कमी, चिड़चिड़ापन।"
+    },
+    "first_aid_tips": {
+      "en": "Maintain a regular sleep schedule and create a restful environment.",
+      "hi": "नियमित नींद का समय बनाए रखें और शांत वातावरण बनाएं।"
+    },
+    "prevention_tips": {
+      "en": "Avoid screens before bed and limit caffeine intake.",
+      "hi": "सोने से पहले स्क्रीन से बचें और कैफीन का सेवन सीमित करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Immunity Boosting",
+      "hi": "प्रतिरक्षा प्रणाली को मजबूत करना"
+    },
+    "description": {
+      "en": "Ways to strengthen your immune system.",
+      "hi": "अपनी प्रतिरक्षा प्रणाली को मजबूत करने के उपाय।"
+    },
+    "possible_symptom": {
+      "en": "Frequent infections, slow recovery.",
+      "hi": "बार-बार संक्रमण, धीमा सुधार।"
+    },
+    "first_aid_tips": {
+      "en": "Eat a balanced diet, exercise, and get enough sleep.",
+      "hi": "संतुलित आहार लें, व्यायाम करें और पर्याप्त नींद लें।"
+    },
+    "prevention_tips": {
+      "en": "Practice good hygiene and manage stress.",
+      "hi": "अच्छी स्वच्छता अपनाएं और तनाव को नियंत्रित करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Hydration",
+      "hi": "हाइड्रेशन"
+    },
+    "description": {
+      "en": "Importance of staying hydrated for health.",
+      "hi": "स्वास्थ्य के लिए हाइड्रेटेड रहने का महत्व।"
+    },
+    "possible_symptom": {
+      "en": "Dry mouth, fatigue, dark urine.",
+      "hi": "मुंह का सूखना, थकान, गहरा रंग का मूत्र।"
+    },
+    "first_aid_tips": {
+      "en": "Drink water regularly throughout the day.",
+      "hi": "दिन भर नियमित रूप से पानी पिएं।"
+    },
+    "prevention_tips": {
+      "en": "Carry a water bottle and monitor fluid intake.",
+      "hi": "पानी की बोतल साथ रखें और तरल पदार्थ का सेवन नियंत्रित करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Stress Reduction",
+      "hi": "तनाव कम करना"
+    },
+    "description": {
+      "en": "Natural ways to reduce stress and improve well-being.",
+      "hi": "तनाव को कम करने और भलाई बढ़ाने के प्राकृतिक उपाय।"
+    },
+    "possible_symptom": {
+      "en": "Irritability, muscle tension, trouble sleeping.",
+      "hi": "चिड़चिड़ापन, मांसपेशियों में तनाव, नींद में परेशानी।"
+    },
+    "first_aid_tips": {
+      "en": "Practice deep breathing, meditation, and regular exercise.",
+      "hi": "गहरी सांस लेना, ध्यान करना और नियमित व्यायाम करें।"
+    },
+    "prevention_tips": {
+      "en": "Maintain a healthy routine and seek support when needed.",
+      "hi": "स्वस्थ दिनचर्या बनाए रखें और आवश्यकता होने पर सहायता लें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Healthy Eating",
+      "hi": "स्वस्थ भोजन"
+    },
+    "description": {
+      "en": "Tips for a balanced and nutritious diet.",
+      "hi": "संतुलित और पौष्टिक आहार के लिए सुझाव।"
+    },
+    "possible_symptom": {
+      "en": "Low energy, frequent illness, poor digestion.",
+      "hi": "कम ऊर्जा, बार-बार बीमार पड़ना, खराब पाचन।"
+    },
+    "first_aid_tips": {
+      "en": "Include fruits, vegetables, whole grains, and lean proteins in meals.",
+      "hi": "भोजन में फल, सब्जियां, साबुत अनाज और कम वसा वाले प्रोटीन शामिल करें।"
+    },
+    "prevention_tips": {
+      "en": "Plan meals and limit processed foods.",
+      "hi": "भोजन की योजना बनाएं और प्रोसेस्ड खाद्य पदार्थों को सीमित करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Protein Intake",
+      "hi": "प्रोटीन का सेवन"
+    },
+    "description": {
+      "en": "Ensuring adequate protein in your daily diet.",
+      "hi": "अपने दैनिक आहार में पर्याप्त प्रोटीन सुनिश्चित करना।"
+    },
+    "possible_symptom": {
+      "en": "Muscle loss, fatigue, slow recovery.",
+      "hi": "मांसपेशियों की कमी, थकान, धीमा सुधार।"
+    },
+    "first_aid_tips": {
+      "en": "Include eggs, dairy, legumes, and lean meats in meals.",
+      "hi": "भोजन में अंडे, डेयरी, दालें और कम वसा वाला मांस शामिल करें।"
+    },
+    "prevention_tips": {
+      "en": "Balance protein sources and monitor intake.",
+      "hi": "प्रोटीन स्रोतों को संतुलित करें और सेवन की निगरानी करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Vitamin Deficiency",
+      "hi": "विटामिन की कमी"
+    },
+    "description": {
+      "en": "Recognizing and preventing vitamin deficiencies.",
+      "hi": "विटामिन की कमी को पहचानना और रोकना।"
+    },
+    "possible_symptom": {
+      "en": "Fatigue, poor immunity, skin issues.",
+      "hi": "थकान, कमजोर प्रतिरक्षा, त्वचा की समस्याएं।"
+    },
+    "first_aid_tips": {
+      "en": "Eat a variety of fruits, vegetables, and whole grains.",
+      "hi": "विभिन्न प्रकार के फल, सब्जियां और साबुत अनाज खाएं।"
+    },
+    "prevention_tips": {
+      "en": "Consider supplements if recommended by a doctor.",
+      "hi": "यदि डॉक्टर सलाह दें तो सप्लीमेंट पर विचार करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Fiber for Digestion",
+      "hi": "पाचन के लिए फाइबर"
+    },
+    "description": {
+      "en": "Role of fiber in digestive health.",
+      "hi": "पाचन स्वास्थ्य में फाइबर की भूमिका।"
+    },
+    "possible_symptom": {
+      "en": "Constipation, bloating, irregular bowel movements.",
+      "hi": "कब्ज, सूजन, अनियमित मल त्याग।"
+    },
+    "first_aid_tips": {
+      "en": "Increase intake of whole grains, fruits, and vegetables.",
+      "hi": "साबुत अनाज, फल और सब्जियों का सेवन बढ़ाएं।"
+    },
+    "prevention_tips": {
+      "en": "Maintain a balanced diet with adequate fiber.",
+      "hi": "पर्याप्त फाइबर के साथ संतुलित आहार बनाए रखें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Iron Deficiency",
+      "hi": "आयरन की कमी"
+    },
+    "description": {
+      "en": "Understanding iron deficiency and its effects.",
+      "hi": "आयरन की कमी और उसके प्रभाव को समझना।"
+    },
+    "possible_symptom": {
+      "en": "Fatigue, pale skin, shortness of breath.",
+      "hi": "थकान, पीली त्वचा, सांस की कमी।"
+    },
+    "first_aid_tips": {
+      "en": "Eat iron-rich foods like spinach, beans, and red meat.",
+      "hi": "पालक, दालें और लाल मांस जैसे आयरन युक्त खाद्य पदार्थ खाएं।"
+    },
+    "prevention_tips": {
+      "en": "Pair iron foods with vitamin C for better absorption.",
+      "hi": "बेहतर अवशोषण के लिए आयरन युक्त भोजन को विटामिन C के साथ लें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Healthy Fats",
+      "hi": "स्वस्थ वसा"
+    },
+    "description": {
+      "en": "Importance of healthy fats in the diet.",
+      "hi": "आहार में स्वस्थ वसा का महत्व।"
+    },
+    "possible_symptom": {
+      "en": "Dry skin, low energy, poor vitamin absorption.",
+      "hi": "सूखी त्वचा, कम ऊर्जा, विटामिन का खराब अवशोषण।"
+    },
+    "first_aid_tips": {
+      "en": "Include nuts, seeds, olive oil, and fatty fish in meals.",
+      "hi": "भोजन में मेवे, बीज, जैतून का तेल और वसायुक्त मछली शामिल करें।"
+    },
+    "prevention_tips": {
+      "en": "Limit trans fats and processed oils.",
+      "hi": "ट्रांस फैट और प्रोसेस्ड तेलों को सीमित करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Managing Stress",
+      "hi": "तनाव का प्रबंधन"
+    },
+    "description": {
+      "en": "Techniques to manage and reduce stress.",
+      "hi": "तनाव को प्रबंधित और कम करने की तकनीकें।"
+    },
+    "possible_symptom": {
+      "en": "Anxiety, irritability, sleep problems.",
+      "hi": "चिंता, चिड़चिड़ापन, नींद की समस्याएं।"
+    },
+    "first_aid_tips": {
+      "en": "Practice mindfulness, deep breathing, and take breaks.",
+      "hi": "माइंडफुलनेस, गहरी सांस लेना और ब्रेक लेना अभ्यास करें।"
+    },
+    "prevention_tips": {
+      "en": "Maintain a healthy routine and seek support if needed.",
+      "hi": "स्वस्थ दिनचर्या बनाए रखें और आवश्यकता होने पर सहायता लें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Reducing Anxiety",
+      "hi": "चिंता को कम करना"
+    },
+    "description": {
+      "en": "Natural ways to reduce anxiety and improve focus.",
+      "hi": "चिंता को कम करने और ध्यान केंद्रित करने के प्राकृतिक उपाय।"
+    },
+    "possible_symptom": {
+      "en": "Restlessness, rapid heartbeat, excessive worry.",
+      "hi": "बेचैनी, तेज़ धड़कन, अत्यधिक चिंता।"
+    },
+    "first_aid_tips": {
+      "en": "Try meditation, light exercise, and grounding techniques.",
+      "hi": "ध्यान, हल्का व्यायाम और ग्राउंडिंग तकनीकें आज़माएं।"
+    },
+    "prevention_tips": {
+      "en": "Limit caffeine and practice relaxation regularly.",
+      "hi": "कैफीन सीमित करें और नियमित रूप से विश्राम का अभ्यास करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Improving Sleep Quality",
+      "hi": "नींद की गुणवत्ता सुधारना"
+    },
+    "description": {
+      "en": "Habits to improve sleep and mental health.",
+      "hi": "नींद और मानसिक स्वास्थ्य सुधारने की आदतें।"
+    },
+    "possible_symptom": {
+      "en": "Difficulty falling asleep, frequent waking, tiredness.",
+      "hi": "नींद आने में कठिनाई, बार-बार जागना, थकान।"
+    },
+    "first_aid_tips": {
+      "en": "Maintain a sleep schedule and avoid screens before bed.",
+      "hi": "नींद का समय तय रखें और सोने से पहले स्क्रीन से बचें।"
+    },
+    "prevention_tips": {
+      "en": "Create a calming bedtime routine.",
+      "hi": "शांतिपूर्ण सोने की दिनचर्या बनाएं।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Boosting Concentration",
+      "hi": "एकाग्रता बढ़ाना"
+    },
+    "description": {
+      "en": "Tips to improve focus and mental clarity.",
+      "hi": "ध्यान और मानसिक स्पष्टता सुधारने के सुझाव।"
+    },
+    "possible_symptom": {
+      "en": "Distractibility, forgetfulness, poor performance.",
+      "hi": "ध्यान भटकना, भूलना, खराब प्रदर्शन।"
+    },
+    "first_aid_tips": {
+      "en": "Eliminate distractions, take breaks, and eat brain-healthy foods.",
+      "hi": "ध्यान भटकाने वाली चीजें हटाएं, ब्रेक लें, और मस्तिष्क के लिए लाभकारी भोजन करें।"
+    },
+    "prevention_tips": {
+      "en": "Practice mindfulness and regular exercise.",
+      "hi": "माइंडफुलनेस और नियमित व्यायाम का अभ्यास करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+    "en": "Emotional Resilience",
+    "hi": "भावनात्मक सहनशीलता"
+    },
+    "description": {
+      "en": "Building resilience to cope with life's challenges.",
+      "hi": "जीवन की चुनौतियों से निपटने के लिए सहनशीलता विकसित करना।"
+    },
+    "possible_symptom": {
+      "en": "Difficulty coping, mood swings, low motivation.",
+      "hi": "सामना करने में कठिनाई, मूड में उतार-चढ़ाव, कम प्रेरणा।"
+    },
+    "first_aid_tips": {
+      "en": "Practice self-care, talk to trusted people, and seek professional help if needed.",
+      "hi": "स्व-देखभाल करें, भरोसेमंद लोगों से बात करें, और आवश्यकता होने पर विशेषज्ञ की मदद लें।"
+    },
+    "prevention_tips": {
+      "en": "Develop healthy coping strategies and maintain social connections.",
+      "hi": "स्वस्थ मुकाबला रणनीतियाँ विकसित करें और सामाजिक संबंध बनाए रखें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Walking for Fitness",
+      "hi": "फिटनेस के लिए चलना"
+    },
+    "description": {
+      "en": "Benefits of regular walking for overall health.",
+      "hi": "समग्र स्वास्थ्य के लिए नियमित रूप से चलने के लाभ।"
+    },
+    "possible_symptom": {
+      "en": "Low energy, poor endurance, weight gain.",
+      "hi": "कम ऊर्जा, सहनशक्ति की कमी, वजन बढ़ना।"
+    },
+    "first_aid_tips": {
+      "en": "Start with short walks and gradually increase duration.",
+      "hi": "छोटे वॉक से शुरू करें और धीरे-धीरे समय बढ़ाएं।"
+    },
+    "prevention_tips": {
+      "en": "Aim for 7,000–10,000 steps daily.",
+      "hi": "प्रतिदिन 7,000–10,000 कदम चलने का लक्ष्य रखें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Stretching and Flexibility",
+      "hi": "स्ट्रेचिंग और लचीलापन"
+    },
+    "description": {
+      "en": "Importance of stretching for injury prevention and mobility.",
+      "hi": "चोट से बचाव और गतिशीलता के लिए स्ट्रेचिंग का महत्व।"
+    },
+    "possible_symptom": {
+      "en": "Muscle tightness, reduced range of motion.",
+      "hi": "मांसपेशियों में जकड़न, गति की सीमा में कमी।"
+    },
+    "first_aid_tips": {
+      "en": "Incorporate daily stretching and warm up before exercise.",
+      "hi": "दैनिक स्ट्रेचिंग करें और व्यायाम से पहले वार्मअप करें।"
+    },
+    "prevention_tips": {
+      "en": "Practice regular stretching and yoga.",
+      "hi": "नियमित स्ट्रेचिंग और योग का अभ्यास करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Cardio Exercise",
+      "hi": "हृदय संबंधी व्यायाम"
+    },
+    "description": {
+      "en": "Role of cardio workouts in heart health and fitness.",
+      "hi": "हृदय स्वास्थ्य और फिटनेस में कार्डियो व्यायाम की भूमिका।"
+    },
+    "possible_symptom": {
+      "en": "Shortness of breath, low stamina, fatigue.",
+      "hi": "सांस फूलना, कम सहनशक्ति, थकान।"
+    },
+    "first_aid_tips": {
+      "en": "Engage in activities like brisk walking, running, or cycling.",
+      "hi": "तेज़ चलना, दौड़ना या साइकिल चलाना जैसे गतिविधियों में भाग लें।"
+    },
+    "prevention_tips": {
+      "en": "Aim for at least 150 minutes of moderate activity per week.",
+      "hi": "प्रति सप्ताह कम से कम 150 मिनट की मध्यम गतिविधि का लक्ष्य रखें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+    "condition": {
+      "en": "Strength Training",
+      "hi": "शक्ति प्रशिक्षण"
+    },
+    "description": {
+      "en": "Benefits of resistance and weight training for muscle health.",
+      "hi": "मांसपेशियों के स्वास्थ्य के लिए प्रतिरोध और वजन प्रशिक्षण के लाभ।"
+    },
+    "possible_symptom": {
+      "en": "Muscle weakness, poor posture, low bone density.",
+      "hi": "मांसपेशियों की कमजोरी, खराब मुद्रा, कम हड्डी घनत्व।"
+    },
+    "first_aid_tips": {
+      "en": "Start with bodyweight exercises and progress gradually.",
+      "hi": "शरीर के वजन वाले व्यायाम से शुरू करें और धीरे-धीरे प्रगति करें।"
+    },
+    "prevention_tips": {
+      "en": "Include strength training 2–3 times per week.",
+      "hi": "प्रति सप्ताह 2–3 बार शक्ति प्रशिक्षण शामिल करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  },
+  {
+     "condition": {
+      "en": "Yoga for Mobility",
+      "hi": "गतिशीलता के लिए योग"
+    },
+    "description": {
+      "en": "How yoga improves flexibility, balance, and mental well-being.",
+      "hi": "योग कैसे लचीलापन, संतुलन और मानसिक भलाई को सुधारता है।"
+    },
+    "possible_symptom": {
+      "en": "Stiffness, stress, poor balance.",
+      "hi": "जकड़न, तनाव, खराब संतुलन।"
+    },
+    "first_aid_tips": {
+      "en": "Practice basic yoga poses and focus on breathing.",
+      "hi": "मूल योग मुद्राओं का अभ्यास करें और सांस पर ध्यान केंद्रित करें।"
+    },
+    "prevention_tips": {
+      "en": "Incorporate yoga into your weekly routine.",
+      "hi": "अपने साप्ताहिक दिनचर्या में योग को शामिल करें।"
+    },
+    "disclaimer": {
+      "en": "This information is for educational purposes only. Consult a healthcare professional for medical advice.",
+      "hi": "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है। चिकित्सीय सलाह के लिए स्वास्थ्य विशेषज्ञ से परामर्श लें।"
+    }
+  }
+]
